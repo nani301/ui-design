@@ -72,7 +72,7 @@ const ANNOUNCEMENTS = [
 
 const OFFICE_BEARERS = [
   {
-    name: 'GALI UMASHANKAR',
+    name: 'RAHUL SHARMA',
     role: 'President',
     image:
       'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80',
@@ -80,7 +80,7 @@ const OFFICE_BEARERS = [
     iconColor: 'text-amber-500',
   },
   {
-    name: 'ASMATULLAH KHAN',
+    name: 'VIKRAM SINGH',
     role: 'General Secretary',
     image:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80',
@@ -88,7 +88,7 @@ const OFFICE_BEARERS = [
     iconColor: 'text-amber-500',
   },
   {
-    name: 'P. ARUN EMMANUEL',
+    name: 'AMIT KUMAR',
     role: 'Working President',
     image:
       'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80',
@@ -96,7 +96,7 @@ const OFFICE_BEARERS = [
     iconColor: 'text-emerald-500',
   },
   {
-    name: 'GOUTHAM REDDY MAHAKALA',
+    name: 'SANJAY GUPTA',
     role: 'Treasurer',
     image:
       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80',

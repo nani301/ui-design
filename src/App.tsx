@@ -207,11 +207,11 @@ const Navbar = () => (
 );
 
 const Hero = () => (
-  <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg shrink-0">
+  <div className="relative w-full rounded-2xl overflow-hidden shadow-lg shrink-0">
     <img
       src={HERO_BG_URL}
       alt="Polytechnic Building"
-      className="w-full h-full object-cover object-center"
+      className="w-full h-auto block"
     />
   </div>
 );

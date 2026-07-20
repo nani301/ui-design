@@ -47,6 +47,7 @@ const ANNOUNCEMENTS = [
     icon: Bell,
     iconColor: 'text-red-500',
     iconBg: 'bg-red-50',
+    iconBorder: 'border-red-100',
   },
   {
     id: 2,
@@ -57,6 +58,7 @@ const ANNOUNCEMENTS = [
     icon: UserPlus,
     iconColor: 'text-emerald-500',
     iconBg: 'bg-emerald-50',
+    iconBorder: 'border-emerald-100',
   },
   {
     id: 3,
@@ -67,6 +69,7 @@ const ANNOUNCEMENTS = [
     icon: Users,
     iconColor: 'text-blue-500',
     iconBg: 'bg-blue-50',
+    iconBorder: 'border-blue-100',
   },
 ];
 
@@ -158,32 +161,32 @@ const Navbar = () => (
         <nav className="hidden lg:flex items-center space-x-8 h-full">
           <a
             href="#"
-            className="flex items-center gap-2 text-slate-900 font-semibold text-sm border-b-2 border-slate-900 pb-1 mt-1"
+            className="flex items-center gap-2 text-white bg-blue-600 font-semibold text-sm px-4 py-2 rounded-lg transition-colors shadow-sm"
           >
             <Home className="w-4 h-4" />
             Home
           </a>
           <a
             href="#"
-            className="text-slate-500 font-medium text-sm hover:text-slate-900 transition-colors"
+            className="text-slate-900 font-semibold text-sm hover:text-blue-600 transition-colors"
           >
             About Us
           </a>
           <a
             href="#"
-            className="text-slate-500 font-medium text-sm hover:text-slate-900 transition-colors"
+            className="text-slate-900 font-semibold text-sm hover:text-blue-600 transition-colors"
           >
             Constitution
           </a>
           <a
             href="#"
-            className="text-slate-500 font-medium text-sm hover:text-slate-900 transition-colors"
+            className="text-slate-900 font-semibold text-sm hover:text-blue-600 transition-colors"
           >
             Gallery
           </a>
           <a
             href="#"
-            className="text-slate-500 font-medium text-sm hover:text-slate-900 transition-colors"
+            className="text-slate-900 font-semibold text-sm hover:text-blue-600 transition-colors"
           >
             Contact Us
           </a>
@@ -231,7 +234,7 @@ const Announcements = () => (
     <div className="flex-1 flex flex-col gap-4">
       {ANNOUNCEMENTS.map((item) => (
         <div key={item.id} className="flex gap-3 items-start p-3 bg-slate-50 rounded-lg border border-slate-100">
-          <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm text-slate-600">
+          <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 border ${item.iconBg} ${item.iconColor} ${item.iconBorder}`}>
             <item.icon className="w-4 h-4" />
           </div>
           <div className="flex-1 min-w-0">
@@ -315,9 +318,13 @@ const UpcomingEvents = () => (
     <div className="flex-1 flex flex-col gap-4">
       {EVENTS.map((event, idx) => (
         <div key={idx} className="flex gap-3 items-center p-3 bg-slate-50 rounded-lg border border-slate-100">
-          <div className="w-12 h-12 rounded-lg bg-slate-900 text-white flex flex-col items-center justify-center flex-shrink-0">
-            <span className="text-[10px] font-bold uppercase opacity-80">{event.month}</span>
-            <span className="text-lg font-bold leading-none">{event.date}</span>
+          <div className="w-12 rounded-lg border border-slate-200 bg-white overflow-hidden flex flex-col flex-shrink-0 shadow-sm text-center">
+            <div className={`w-full py-1 ${event.color} text-white`}>
+              <span className="text-[9px] font-bold uppercase tracking-wider block leading-none">{event.month}</span>
+            </div>
+            <div className="w-full py-1.5 bg-white text-slate-900">
+              <span className="text-lg font-bold leading-none block">{event.date}</span>
+            </div>
           </div>
           <div className="flex-1 min-w-0">
             <h4 className="text-sm font-bold text-slate-900 truncate mb-1">

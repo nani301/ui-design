@@ -213,33 +213,6 @@ const Hero = () => (
       alt="Polytechnic Building"
       className="w-full h-full object-cover object-center"
     />
-    <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end min-h-[50%]">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
-        <div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-3">
-            Empowering Educators,<br />
-            Strengthening Polytechnic Education
-          </h2>
-          <p className="text-slate-200 text-sm max-w-lg mb-5">
-            Uniting gazetted lecturers across Telangana to promote excellence in
-            technical education and professional growth.
-          </p>
-          <div className="flex items-center gap-3">
-            <button className="bg-white text-slate-900 text-xs font-bold px-5 py-2.5 rounded-lg hover:bg-slate-100 transition-colors shadow-sm">
-              Explore Association
-            </button>
-            <button className="bg-slate-900/40 backdrop-blur-sm border border-white/20 text-white text-xs font-bold px-5 py-2.5 rounded-lg hover:bg-slate-800/40 transition-colors shadow-sm">
-              Contact Us
-            </button>
-          </div>
-        </div>
-        <div className="flex space-x-2">
-          <div className="w-2 h-2 rounded-full bg-white"></div>
-          <div className="w-2 h-2 rounded-full bg-white/40"></div>
-          <div className="w-2 h-2 rounded-full bg-white/40"></div>
-        </div>
-      </div>
-    </div>
   </div>
 );
 
